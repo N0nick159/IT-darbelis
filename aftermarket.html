@@ -37,8 +37,8 @@
             <ul class="navbar-nav nav-left">
                 <li class="nav-item"><a class="nav-link" key="spare parts" href="spare parts.html"> SPARE PARTS</a></li>
                 <li class="nav-item"><a class="nav-link" key="aftermarked" href="aftermarket.html"> AFTERMARKET PARTS</a></li>
-                <li class="nav-item"><a class="nav-link" key="head" href="head.html"> HEADGASKETS</a></li>
-                <li class="nav-item"><a class="nav-link" key="gallery" href="gallery.html"> GALLERY</a></li>
+                <li class="nav-item"><a class="nav-link" key="howto" href="how to.html"> HOW TO</a></li>
+                <li class="nav-item"><a class="nav-link" key="gallery" href="gallery.html"> OUR JOB GALLERY</a></li>
                 <li class="nav-item"><a class="nav-link" key="about" href="about.html"> ABOUT</a></li>
             </ul>
             <div class="container jumbotron text-center">
@@ -58,18 +58,31 @@
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
                         <div class="modal-body">
-                            <div class="form-group">
-                                <input type="text" data-translate="username_placeholder" name="username"
-                                    class="form-control" placeholder="Username" key='username'>
-                            </div>
-                            <div class="form-group">
-                                <input type="password" data-translate="password_placeholder" name="password"
-                                    class="form-control" placeholder="Password" key="password">
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-success" id="modalsignin" key="modalsignin"> Sign
-                                In</button>
+                            <form class="needs-validation" novalidate>
+                                <div class="form-group">
+                                    <i class="fas fa-envelope"></i>
+                                    <label for="exampleInputEmail1" key="label_email"> Enter your email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" data-translate="email_placeholder"
+                                        placeholder="Enter email" key="email" required>
+                                    <div class="invalid-feedback" key="invalid_email">
+                                        Please enter a valid email address
+                                    </div>
+                                    <small id="emailHelp" key="email_help" class="form-text text-muted">We'll never share your
+                                        email with anyone
+                                        else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <i class="fas fa-id-card"></i>
+                                    <label for="exampleInputPassword1" key="label_password">Enter your password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        data-translate="password_placeholer" placeholder="Password" key="password" required>
+                                    <div class="invalid-feedback" key="invalid_password">
+                                        Please enter a password
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary" key="submit">Submit</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -81,22 +94,40 @@
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
                         <div class="modal-body">
-                            <div class="form-group">
-                                <input type="text" data-translate="email_placeholder" name="email" class="form-control"
-                                    placeholder="Email" key="email">
-                            </div>
-                            <div class="form-group">
-                                <input type="username" data-translate="username_placeholder" name="username"
-                                    class="form-control" placeholder="Username" key="username">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" data-translate="password_placeholder" name="password"
-                                    class="form-control" placeholder="Password" key="password">
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-success" id="modalsignup" key="modalsignup"> Create
-                                Account</button>
+                            <form class="needs-validation" novalidate>
+                                <div class="form-group">
+                                    <i class="fas fa-id-card"></i>
+                                    <label for="exampleInputUsername" key="label_username">Enter your username</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1"
+                                        data-translate="username_placeholer" placeholder="Username" key="username" required>
+                                    <div class="invalid-feedback" key="invalid_username">
+                                        Please enter a username
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <i class="fas fa-envelope"></i>
+                                    <label for="exampleInputEmail1" key="label_email"> Enter your email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" data-translate="email_placeholder"
+                                        placeholder="Enter email" key="email" required>
+                                    <div class="invalid-feedback" key="invalid_email">
+                                        Please enter a valid email address
+                                    </div>
+                                    <small id="emailHelp" key="email_help" class="form-text text-muted">We'll never share your
+                                        email with anyone
+                                        else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <i class="fas fa-id-card"></i>
+                                    <label for="exampleInputPassword1" key="label_password">Enter your password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        data-translate="password_placeholer" placeholder="Password" key="password" required>
+                                    <div class="invalid-feedback" key="invalid_password">
+                                        Please enter a password
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary" key="submit">Submit</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -118,7 +149,7 @@
                     </div>
                 </div>
                 <div class="product-buttom text-center">
-                    <h3>EXHAUST SYSTEM</h3>
+                    <h3 key = "exhaust" >EXHAUST SYSTEM</h3>
                     <h5>400€‎</h5>
                 </div>
             </div>
@@ -135,7 +166,7 @@
                     </div>
                 </div>
                 <div class="product-buttom text-center">
-                    <h3>KOSEI WHEELS</h3>
+                    <h3 key = "kosei" >KOSEI WHEELS</h3>
                     <h5>100€‎</h5>
                 </div>
             </div>
@@ -152,7 +183,7 @@
                     </div>
                 </div>
                 <div class="product-buttom text-center">
-                    <h3 key="turbo">BBS WHEELS</h3>
+                    <h3 key = "bbs" >BBS WHEELS</h3>
                     <h5>500€‎</h5>
                 </div>
             </div>
@@ -169,7 +200,7 @@
                     </div>
                 </div>
                 <div class="product-buttom text-center">
-                    <h3>SPOILER</h3>
+                    <h3 key = "mini" >SPOILER</h3>
                     <h5>50€‎</h5>
                 </div>
             </div>
@@ -186,7 +217,7 @@
                     </div>
                 </div>
                 <div class="product-buttom text-center">
-                    <h3>BIG SPOILER</h3>
+                    <h3 key = "big" >BIG SPOILER</h3>
                     <h5>30€‎/VNT</h5>
                 </div>
             </div>
@@ -203,7 +234,7 @@
                     </div>
                 </div>
                 <div class="product-buttom text-center">
-                    <h3>ROOF RACK</h3>
+                    <h3 key = "rack" >ROOF RACK</h3>
                     <h5>300€‎</h5>
                 </div>
             </div>
@@ -220,7 +251,7 @@
                     </div>
                 </div>
                 <div class="product-buttom text-center">
-                    <h3>COILOVERS</h3>
+                    <h3 key = "coils" >COILOVERS</h3>
                     <h5>70€‎</h5>
                 </div>
             </div>
@@ -237,7 +268,7 @@
                     </div>
                 </div>
                 <div class="product-buttom text-center">
-                    <h3>RECARO SEATS</h3>
+                    <h3 key = "recaro" >RECARO SEATS</h3>
                     <h5>150€‎</h5>
                 </div>
             </div>
@@ -254,7 +285,7 @@
                     </div>
                 </div>
                 <div class="product-buttom text-center">
-                    <h3>GOUGES DASH</h3>
+                    <h3 key = "gouges" >GOUGES DASH</h3>
                     <h5>200€‎</h5>
                 </div>
             </div>
@@ -271,7 +302,7 @@
                     </div>
                 </div>
                 <div class="product-buttom text-center">
-                    <h3>CLUCTCH KIT</h3>
+                    <h3 key = "cluctch" >CLUCTCH KIT</h3>
                     <h5>200€</h5>
                 </div>
             </div>
@@ -288,7 +319,7 @@
                     </div>
                 </div>
                 <div class="product-buttom text-center">
-                    <h3>AIR FILTER</h3>
+                    <h3 key = "air" >AIR FILTER</h3>
                     <h5>150€</h5>
                 </div>
             </div>
@@ -305,7 +336,7 @@
                     </div>
                 </div>
                 <div class="product-buttom text-center">
-                    <h3>ROOL CAGE</h3>
+                    <h3 key = "cage" >ROOL CAGE</h3>
                     <h5>150€</h5>
                 </div>
             </div>
