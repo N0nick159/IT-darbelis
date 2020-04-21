@@ -504,3 +504,8 @@ height: 200px;
     text-align: center;
     width: 1200px!important;
 }
+
+#content img{
+    width: 600px;
+    height: 500px;
+}
